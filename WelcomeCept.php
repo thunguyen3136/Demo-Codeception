@@ -5,6 +5,6 @@
 	$I->fillField('login_id', 'admin');
 	$I->fillField('password', 'admin');
 	$I->click('ログイン');
-	$I->waitForText('こんにちは');
-	$I->see("こんにちは");
+	$I->wait(3);
+	$I->see('こんにちは');
  ?>
